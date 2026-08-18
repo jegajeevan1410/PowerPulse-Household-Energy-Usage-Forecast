@@ -104,11 +104,7 @@ Hyperparameter tuning did not improve performance. The search selected a shallow
 ├── notebooks/
 │   └── PowerPulse_Analysis.ipynb    # full pipeline
 ├── report/
-│   └── PowerPulse_Report.md         # detailed write-up
-├── models/
-│   ├── final_xgb_model.pkl
-│   └── features.pkl
-├── images/                          # plots
+│   └── PowerPulse_Report.md         # detailed write-up                        
 ├── requirements.txt
 └── README.md
 ```
