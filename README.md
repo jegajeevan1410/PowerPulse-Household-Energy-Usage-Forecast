@@ -118,8 +118,8 @@ Hyperparameter tuning did not improve performance. The search selected a shallow
 ## Setup
 
 ```bash
-git clone https://github.com/jegajeevan1410/PowerPulse-Household-Energy-Forecast.git
-cd PowerPulse-Household-Energy-Forecast
+git clone https://github.com/jegajeevan1410/PowerPulse-Household-Energy-Usage-Forecast.git
+cd PowerPulse-Household-Energy-Usage-Forecast
 pip install -r requirements.txt
 ```
 
