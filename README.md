@@ -109,34 +109,6 @@ Hyperparameter tuning did not improve performance. The search selected a shallow
 └── README.md
 ```
 
----
-
-## Setup
-
-```bash
-git clone https://github.com/jegajeevan1410/PowerPulse-Household-Energy-Usage-Forecast.git
-cd PowerPulse-Household-Energy-Usage-Forecast
-pip install -r requirements.txt
-```
-
-Download `household_power_consumption.txt` from the UCI link above and place it in the project root, then run the notebook.
-
-**Inference with the saved model:**
-
-```python
-import joblib
-import pandas as pd
-
-model = joblib.load("models/final_xgb_model.pkl")
-features = joblib.load("models/features.pkl")
-
-prediction = model.predict(X_new[features])
-```
-
-Column order must match `features.pkl`.
-
----
-
 ## Tech Stack
 
 Python · pandas · NumPy · scikit-learn · XGBoost · Matplotlib · Seaborn · joblib
