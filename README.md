@@ -57,6 +57,10 @@ Trained four models against a persistence baseline, then tuned the strongest wit
 | Neural Network (MLP) | 0.0661 | **0.1529** | **0.9709** |
 | XGBoost (tuned) | 0.0617 | 0.1575 | 0.9691 |
 
+![Actual vs Predicted](images/actual_vs_predicted_2days.png)
+
+![Feature Importance](images/feature_importance.png)
+
 XGBoost was selected as the final model. Its RMSE deficit against the Neural Network (0.0005) is within noise, and it trains on the full 1.64M rows in 57 seconds — roughly 3× faster than Random Forest on less than a fifth of the data — while requiring no feature scaling and producing interpretable importances.
 
 Hyperparameter tuning did not improve performance. The search selected a shallower configuration that lowered MAE but raised RMSE, and the untuned model was retained.
